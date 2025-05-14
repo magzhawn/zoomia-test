@@ -21,7 +21,7 @@ export function useChat() {
       messages.value.push(reply);
     } catch (error) {
       messages.value.push({
-        role: "assistant",
+        role: "system",
         content:
           error instanceof Error
             ? `⚠️ ${error.message}`

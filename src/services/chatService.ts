@@ -32,9 +32,9 @@ export const sendMessageToAI = async (messages: Message[]): Promise<Message> => 
         role: 'assistant'
       }
     } else {
-      throw new Error('No response from AI')
+      throw new Error('ИИ не отвечает...')
     }
   } catch (error) {
-    throw new Error('Failed to connect to OpenAI API')
+    throw new Error('Не удалось подключиться к API 🙂‍↕️')
   }
 }
